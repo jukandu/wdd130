@@ -1,11 +1,3 @@
-/* CSS Variables */
-:root {
-    --primary-color: #004d40;
-    --secondary-color: #00796b;
-    --background-color: #f4f4f4;
-    --text-color: #333333;
-}
-
 /* Universal Selector Reset */
 * {
     margin: 0;
@@ -15,12 +7,12 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: #f4f4f4;
+    color: #333333;
 }
 
 header {
-    background-color: var(--primary-color);
+    background-color: darkblue;
     padding: 10px;
 }
 
@@ -29,21 +21,20 @@ nav {
     justify-content: space-around;
 }
 
-nav a,
-footer a {
+nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 15px;
+    display: block;
+    padding: 20px;
 }
 
 nav a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 h1 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
+    color: darkblue;
 }
 
 main {
@@ -53,63 +44,58 @@ main {
     background-color: #ffffff;
 }
 
-/* Hero Overlay Positioning */
-.hero {
-    position: relative;
-    margin-bottom: 2rem;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-}
-
-.hero article {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 1rem;
-    max-width: 500px;
-}
-
-/* Article Image Float */
-.hero article img {
-    float: right;
+/* Float Profile Image */
+main img {
     width: 150px;
     height: auto;
     border: 1px solid #333;
     padding: 5px;
-    margin-left: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    float: right;
+    margin-left: 1rem;
 }
 
-.box {
-    background-color: #eee;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-    border-radius: 8px;
-    color: #333;
+/* Paragraph Reset */
+p {
+    padding: 0;
 }
 
+/* Aside Styling with Relative Positioning for absolute heading overlay */
 aside {
+    width: 20em;
     text-align: center;
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    float: none;
+    margin: 0;
 }
 
-footer {
-    text-align: center;
-    background-color: var(--primary-color);
-    color: white;
+/* Class Selectors */
+/* box */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
     padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+/* Footer Styling */
+footer {
     margin-top: 15px;
     border-top: 1px solid #000;
+    text-align: center;
+    padding: 1rem;
+    background-color: darkblue;
+    color: white;
 }
