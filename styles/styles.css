@@ -1,16 +1,22 @@
+/* CSS Variables */
 :root {
-    --primary-color: darkblue;
+    --primary-color: #004d40;
     --secondary-color: #00796b;
     --background-color: #f4f4f4;
     --text-color: #333333;
+}
+
+/* Universal Selector Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
-    margin: 0;
-    padding: 0;
 }
 
 header {
@@ -23,20 +29,21 @@ nav {
     justify-content: space-around;
 }
 
-nav a {
+nav a,
+footer a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    display: block;
-    padding: 20px;
+    padding: 15px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
 }
 
 main {
@@ -46,19 +53,38 @@ main {
     background-color: #ffffff;
 }
 
+/* Hero Overlay Positioning */
 .hero {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    position: relative;
     margin-bottom: 2rem;
 }
 
-main img {
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+}
+
+.hero article {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    max-width: 500px;
+}
+
+/* Article Image Float */
+.hero article img {
+    float: right;
     width: 150px;
     height: auto;
     border: 1px solid #333;
     padding: 5px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    margin-left: 10px;
 }
 
 .box {
@@ -81,8 +107,8 @@ aside img {
 
 footer {
     text-align: center;
-    background-color: #ffffff;
-    color: #333;
+    background-color: var(--primary-color);
+    color: white;
     padding: 1rem;
     margin-top: 15px;
     border-top: 1px solid #000;
