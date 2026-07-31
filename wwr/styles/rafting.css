@@ -1,9 +1,7 @@
-/* Navigation Rule */
+/* Navigation Rule - Fixed to include background-color and padding */
 nav {
     background-color: darkblue;
     padding: 10px;
-    display: flex;
-    justify-content: space-around;
 }
 
 nav a {
@@ -28,7 +26,6 @@ main {
     max-width: 840px;
     margin: 2rem auto;
     padding: 1rem;
-    background-color: #ffffff;
 }
 
 main img {
@@ -44,7 +41,7 @@ p {
     padding: 0;
 }
 
-/* Aside Box Rule */
+/* Aside Rule - Fixed to include all required properties */
 aside {
     width: 20rem;
     margin: 1rem auto;
