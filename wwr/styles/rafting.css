@@ -1,57 +1,60 @@
-/* Navigation Styling */
-nav {
-    background-color: darkblue;
-    padding: 10px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-nav a {
+header {
+    background-color: #008751;
     color: white;
-    display: block;
-    padding: 20px;
+    text-align: center;
+    padding: 1.5rem;
 }
 
-/* Heading Styling */
-h1 {
-    color: darkblue;
-}
-
-/* Main Container & Profile Image */
 main {
     max-width: 840px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid #333;
-    padding: 5px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px auto;
 }
 
-/* Paragraph Reset */
-p {
-    padding: 0;
-}
-
-/* Aside Card Styling */
 aside {
     width: 20rem;
-    margin: 1rem;
+    margin: 1rem auto;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
+    border-radius: 6px;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    border-radius: 4px;
 }
 
-/* Footer Styling */
+p {
+    padding: 0;
+    line-height: 1.6;
+}
+
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
 }
