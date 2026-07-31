@@ -1,101 +1,83 @@
-/* Universal Selector Reset */
-* {
+/* General Element Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    color: #333333;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: #008751;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
 }
 
+/* FIX 1: Added nav background-color and padding */
 nav {
-    display: flex;
-    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
 }
 
 nav a {
     color: white;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
     padding: 20px;
+    display: block;
+    text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: underline;
+main {
+    max-width: 840px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px auto;
 }
 
 h1 {
     color: darkblue;
 }
 
-main {
-    max-width: 840px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: #ffffff;
-}
-
-/* Float Profile Image */
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid #333;
-    padding: 5px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    float: right;
-    margin-left: 1rem;
-}
-
-/* Paragraph Reset */
-p {
-    padding: 0;
-}
-
-/* Aside Styling with Relative Positioning for absolute heading overlay */
+/* FIX 2: Added all required aside properties (margin, border, padding, background-color, color) */
 aside {
-    width: 20em;
+    width: 20rem;
+    margin: 1rem auto;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
     text-align: center;
-    position: relative;
-}
-
-aside h2 {
-    position: absolute;
-    top: 47px;
-    left: 150px;
+    border-radius: 6px;
 }
 
 aside img {
     width: 200px;
     height: auto;
-    float: none;
-    margin: 0;
+    border-radius: 4px;
 }
 
-/* Class Selectors */
-/* box */
-.box {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
+p {
+    padding: 0;
+    line-height: 1.6;
 }
 
-/* Footer Styling */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
     padding: 1rem;
-    background-color: darkblue;
-    color: white;
+    background-color: #f1f1f1;
 }
