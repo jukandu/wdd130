@@ -1,37 +1,34 @@
-/* CSS Variables */
 :root {
     --primary-color: #1d3557;
     --secondary-color: #457b9d;
     --accent1-color: #e63946;
     --accent2-color: #f1faee;
-    --heading-font: "Georgia", serif;
+    --heading-font: 'Georgia', serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Universal Box Model Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Document Body Styles */
 body {
     font-family: var(--body-font);
     color: var(--primary-color);
     background-color: var(--accent2-color);
 }
 
-/* Page Layout Constraints */
 header,
 main,
 footer {
     width: 840px;
     margin: 0 auto;
     background-color: #ffffff;
+    border: 1px solid var(--secondary-color);
+    /* Uses --secondary-color */
 }
 
-/* Typography Rules */
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -46,7 +43,6 @@ article {
     padding: 8px;
 }
 
-/* Footer Social Media Styling */
 .socialmedia a {
     text-decoration: none;
 }
@@ -57,9 +53,10 @@ article {
     margin-right: 10px;
 }
 
-/* Hero Section & Overlays */
 .hero {
     position: relative;
+    border-bottom: 4px solid var(--accent1-color);
+    /* Uses --accent1-color */
 }
 
 .hero img {
@@ -74,7 +71,6 @@ h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.85;
     background-color: var(--primary-color);
     color: #ffffff;
 }
@@ -86,7 +82,6 @@ h1 {
     right: 20px;
     background-color: rgba(241, 250, 238, 0.9);
     padding: 16px;
-    border-radius: 4px;
 }
 
 .hero article img {
@@ -94,5 +89,4 @@ h1 {
     width: 125px;
     height: auto;
     margin-left: 15px;
-    border-radius: 4px;
 }
