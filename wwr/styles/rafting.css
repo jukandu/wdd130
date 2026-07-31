@@ -1,7 +1,9 @@
-/* Navigation Styling */
+/* Navigation Rule */
 nav {
     background-color: darkblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
@@ -21,11 +23,12 @@ h1 {
     color: darkblue;
 }
 
-/* Main Container & Profile Image */
+/* Main Content Area */
 main {
     max-width: 840px;
     margin: 2rem auto;
     padding: 1rem;
+    background-color: #ffffff;
 }
 
 main img {
@@ -41,10 +44,10 @@ p {
     padding: 0;
 }
 
-/* Aside Card Styling */
+/* Aside Box Rule */
 aside {
     width: 20rem;
-    margin: 1rem;
+    margin: 1rem auto;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: #eee;
