@@ -1,90 +1,89 @@
-:root {
-    --primary-color: #1d3557;
-    --secondary-color: #457b9d;
-    --accent1-color: #e63946;
-    --accent2-color: #f1faee;
-    --heading-font: 'Georgia', serif;
-    --body-font: Arial, Helvetica, sans-serif;
-}
-
-* {
+/* General Element Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-body {
-    font-family: var(--body-font);
-    color: var(--primary-color);
-    background-color: var(--accent2-color);
+header {
+    background-color: #008751;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
 }
 
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border: 1px solid var(--secondary-color);
+/* Nav rule (fixing the first error in your audit) */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-.socialmedia a {
+nav a {
+    color: white;
+    padding: 20px;
+    display: block;
     text-decoration: none;
 }
 
-.socialmedia img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+/* Main element styling */
+main {
+    max-width: 840px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
 }
 
-.hero {
-    position: relative;
-    border-bottom: 4px solid var(--accent1-color);
-}
-
-.hero img {
+/* Main image specific styling */
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
     display: block;
-    width: 100%;
-    height: auto;
+    margin: 0 auto 15px auto;
 }
 
+/* H1 color rule found in audit */
 h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
+    color: darkblue;
+}
+
+/* Aside element styling (fixing the second error in your audit) */
+aside {
+    width: 20rem;
+    margin: 1rem auto;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
     text-align: center;
-    background-color: var(--primary-color);
-    color: #ffffff;
+    border-radius: 6px;
 }
 
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(241, 250, 238, 0.9);
-    padding: 16px;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
+/* Aside image styling */
+aside img {
+    width: 200px;
     height: auto;
-    margin-left: 15px;
+    border-radius: 4px;
+}
+
+/* Paragraph padding adjustment */
+p {
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
 }
