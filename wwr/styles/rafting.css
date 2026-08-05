@@ -1,88 +1,124 @@
+/* --- Base Variables & Setup --- */
 :root {
-    --primary-color: #1d3557;
-    --secondary-color: #457b9d;
-    --accent1-color: #e63946;
-    --accent2-color: #f1faee;
-    --heading-font: 'Georgia', serif;
-    --body-font: Arial, Helvetica, sans-serif;
-}
-
-/* Universal Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --primary-color: #004080;
+    --secondary-color: #ff9900;
+    --accent-color: #e6f2ff;
+    --heading-font: 'Arial', sans-serif;
+    --body-font: 'Helvetica', sans-serif;
 }
 
 body {
     font-family: var(--body-font);
-    color: var(--primary-color);
-    background-color: var(--accent2-color);
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
 header,
-main,
 footer {
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
-    background-color: #ffffff;
-    border: 1px solid var(--secondary-color);
+    padding: 20px;
 }
 
-/* Week 4: CSS Grid for Header Layout (Logo + Nav) */
+/* --- Header & Navigation --- */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 15px 20px;
+    gap: 20px;
+    background-color: var(--accent-color);
 }
 
 header img {
-    width: 80px;
-    height: auto;
+    width: 150px;
 }
 
-/* Week 4: CSS Flexbox for Navigation */
 nav {
     display: flex;
     justify-content: flex-end;
-    gap: 25px;
+    gap: 20px;
 }
 
 nav a {
+    display: block;
+    padding: 10px 15px;
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
 }
 
 nav a:hover {
-    color: var(--accent1-color);
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 4px;
 }
 
-h1,
-h2 {
+/* --- Main Content & Layout --- */
+main {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
     font-family: var(--heading-font);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+/* --- Adventures Section (With Specific Image Resizing) --- */
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.adventures figure {
+    flex: 1;
+    min-width: 140px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Resizing rule specifically handling adventure1 through adventure5 */
+.adventures img,
+.adventures [src*="adventure"] {
+    width: 100%;
+    height: 120px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.adventures figcaption {
+    font-size: 0.85rem;
+    margin-top: 5px;
+    font-weight: bold;
     color: var(--primary-color);
 }
 
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-/* Footer layout and right-aligned social media icons */
+/* --- Footer & Social Icons --- */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
 }
 
 footer p {
-    margin: 0;
     font-size: 0.9rem;
+    margin: 0;
 }
 
 .socialmedia {
@@ -90,81 +126,7 @@ footer p {
     gap: 15px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
 .socialmedia img {
     width: 30px;
     height: 30px;
-}
-
-/* Hero Section & Overlay */
-.hero {
-    position: relative;
-    border-bottom: 4px solid var(--accent1-color);
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    background-color: var(--primary-color);
-    color: #ffffff;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(241, 250, 238, 0.9);
-    padding: 16px;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-    height: auto;
-    margin-left: 15px;
-}
-
-/* Week 4: Adventures Section Layout (Figures & Figcaptions) */
-.adventures {
-    padding: 20px;
-    text-align: center;
-}
-
-.adventures-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.adventures figure {
-    flex: 1;
-    text-align: center;
-}
-
-.adventures img {
-    width: 100%;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.adventures figcaption {
-    font-size: 0.8rem;
-    margin-top: 6px;
-    color: var(--primary-color);
-    font-weight: bold;
 }
