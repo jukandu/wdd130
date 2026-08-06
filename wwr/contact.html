@@ -1,118 +1,121 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Rapid Rivers Rafting Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | White Water Rafting Company</title>
     <meta name="description"
-      content="Get in touch with Rapid Rivers Rafting Company. Ask questions, make reservations, or send us feedback about your white water rafting adventure.">
+      content="Get in touch with the White Water Rafting Company for inquiries, reservations, and questions about our adventure trips.">
     <meta name="author" content="Joseph Silas Ukandu">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Rapid Rivers Rafting Company Logo">
+        <div class="logo-box">
+            <img src="images/logo.png" alt="WWR Logo">
+        </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Contact Us</h1>
-
-        <section class="contact-info-section">
-            <div class="company-details">
-                <h2>Rapid Rivers Rafting Company</h2>
-                <p><strong>Address:</strong> 123 Rapids Lane, Riverton, UT 84065</p>
-                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                <p><strong>Email:</strong> info@rapidriversrafting.com</p>
-            </div>
-            <div class="map-container">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.7123456789!2d-111.8910!3d40.7608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzM4LjkiTiAxMTHCsDUzJzI3LjYiVw!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
-                  width="100%" height="250" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+        <section class="contact-hero">
+            <h1>Contact Us</h1>
         </section>
 
-        <section class="employee-section">
-            <h2>Meet Our Team</h2>
-            <div class="employee-grid">
-                <figure>
-                    <img src="images/employee1.jpg" alt="John Doe - Lead Guide">
-                    <figcaption>John Doe - Lead Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee2.jpg" alt="Jane Smith - Operations Manager">
-                    <figcaption>Jane Smith - Operations Manager</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee3.jpg" alt="Sam Johnson - Safety Coordinator">
-                    <figcaption>Sam Johnson - Safety Coordinator</figcaption>
-                </figure>
+        <section class="company-info">
+            <h2>White Water Rafting Company</h2>
+            <p><strong>Address:</strong> 123 Main River Street, Kolob, California</p>
+            <p><strong>Phone:</strong> +1 999 999 9999</p>
+            <p><strong>Email:</strong> info@whitewater.com</p>
+
+            <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153169!3d-37.81627974202166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d6ffe3970b0!2sVictoria%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                  allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
 
         <section class="form-section">
             <h2>Send Us a Message</h2>
             <form action="#" method="post" class="contact-form">
+                <fieldset>
+                    <legend>Customer Information</legend>
 
-                <div class="form-item">
-                    <label for="username">Your Name:</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-
-                <div class="form-item">
-                    <label for="useremail">Your Email:</label>
-                    <input type="email" id="useremail" name="useremail" required>
-                </div>
-
-                <fieldset class="form-item">
-                    <legend>Purpose of Message:</legend>
-                    <div class="radio-group">
-                        <label><input type="radio" name="purpose" value="general" required> General
-                            Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation"> Reservation
-                            Question</label>
-                        <label><input type="radio" name="purpose" value="suggestion"> Website
-                            Suggestion</label>
+                    <div class="form-item">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required
+                          placeholder="Enter your full name">
                     </div>
+
+                    <div class="form-item">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required
+                          placeholder="Enter your email address">
+                    </div>
+
+                    <div class="form-item">
+                        <label>Message Purpose:</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="purpose" value="general" checked>
+                                General Inquiry</label>
+                            <label><input type="radio" name="purpose" value="reservation">
+                                Reservation Question</label>
+                            <label><input type="radio" name="purpose" value="suggestion"> Website
+                                Suggestion</label>
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="4" required
+                          placeholder="Type your message here..."></textarea>
+                    </div>
+
+                    <div class="form-item checkbox-item">
+                        <label><input type="checkbox" name="newsletter" value="subscribed"> Please
+                            subscribe me to the monthly newsletter</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Get in Touch!</button>
                 </fieldset>
-
-                <div class="form-item">
-                    <label for="usermessage">Message:</label>
-                    <textarea id="usermessage" name="usermessage" rows="4" required></textarea>
-                </div>
-
-                <div class="form-item checkbox-item">
-                    <label>
-                        <input type="checkbox" name="subscribe" value="yes"> Please subscribe me to
-                        the monthly newsletter
-                    </label>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Message</button>
             </form>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-grid">
+                <figure>
+                    <img src="images/employee1.jpg" alt="John Doe, Lead Guide">
+                    <figcaption>John Doe - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Jane Smith, Customer Relations">
+                    <figcaption>Jane Smith - Relations</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Mike Johnson, Safety Manager">
+                    <figcaption>Mike Johnson - Safety</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 | Rapid Rivers Rafting Company | Joseph Silas Ukandu</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.svg" alt="Facebook Icon">
-            </a>
-            <a href="https://linkedin.com" target="_blank">
-                <img src="images/linkedin.svg" alt="LinkedIn Icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.svg" alt="Instagram Icon">
-            </a>
-        </nav>
+        <p>&copy; 2026 White Water Rafting Company | All rights reserved</p>
+        <div class="social-links">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
     </footer>
 </body>
 
